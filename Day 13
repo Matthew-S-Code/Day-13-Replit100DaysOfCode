@@ -1,0 +1,22 @@
+print("Exam grade calculator")
+print()
+examName = input("Name of exam: ")
+maxScore = int(input("Maximum possible score: "))
+yourScore = float(input("Your score: "))
+gradePercent = yourScore / maxScore * 100
+gradePercent = round(gradePercent, 2)
+print(gradePercent, "%")
+if gradePercent >= 90:
+  print("Thats an A+")
+elif gradePercent >= 80:
+  print("Thats an A-")
+elif gradePercent >= 70:
+  print("Thats a B")
+elif gradePercent >= 60:
+  print("Thats a C")
+elif gradePercent >= 50:
+  print("Thats a D")
+elif gradePercent <= 49:
+  print("Unfortunately that is a U")
+else:
+  print("Please Try again, any score below 50 will result in a U")
